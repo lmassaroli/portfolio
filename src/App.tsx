@@ -1,4 +1,4 @@
-import reactLogo from "./assets/react.svg";
+import React from "react";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -8,21 +8,24 @@ export default function App() {
       <nav>
         <ul>
           <li>
-            <a>Home</a>
+            <a href="#home">Home</a>
           </li>
           <li className="selected">
-            <a>Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a>About</a>
+            <a href="#about">About</a>
           </li>
         </ul>
       </nav>
 
       <div className="page-content">
-        <section>
+        <section id="home">
           <header>
-            <h1>Home</h1>
+            <div className="home-title-container">
+              <h1 className="home-title">Leonardo Massaroli</h1>
+              <h2 className="home-subtitle">Software Engineer</h2>
+            </div>
 
             <div className="home-intro">
               <p>
@@ -40,13 +43,13 @@ export default function App() {
           </header>
         </section>
 
-        <section>
+        <section id="projects">
           <header>
             <h1>Projects</h1>
           </header>
         </section>
 
-        <section>
+        <section id="about">
           <header>
             <h1>About</h1>
           </header>
