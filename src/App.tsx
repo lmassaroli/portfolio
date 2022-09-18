@@ -47,6 +47,27 @@ export default function App() {
           <header>
             <h1>Projects</h1>
           </header>
+
+          <ul className="projects">
+            <li>
+              <a
+                href="https://leoflood.github.io/pixi-shooter"
+                rel="me"
+                target="_blank"
+              >
+                Pixi Shooter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.gamesflood.ezejedrez"
+                rel="me"
+                target="_blank"
+              >
+                Ezejedrez
+              </a>
+            </li>
+          </ul>
         </section>
 
         <section id="about">
