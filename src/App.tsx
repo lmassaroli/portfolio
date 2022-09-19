@@ -60,7 +60,7 @@ export default function App() {
                 target="_blank"
                 className="project"
               >
-                <img src="/pixi-shooter.png" />
+                <img src="/portfolio/pixi-shooter.png" />
                 <b>Pixi Shooter</b>
               </a>
             </li>
@@ -71,7 +71,7 @@ export default function App() {
                 target="_blank"
                 className="project"
               >
-                <img src="/ezejedrez.png" />
+                <img src="/portfolio/ezejedrez.png" />
                 <b>Ezejedrez</b>
               </a>
             </li>
