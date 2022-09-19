@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
 
 export default function App() {
+  const [selectedLink, setSelectedLink] = useState("");
+
+  const LiLink = ({ title = "", link = "" }) => (
+    <li className={`${selectedLink === link ? "selected" : ""}`}>
+      <a href={`#${link}`} onClick={() => setSelectedLink(link)}>
+        {title}
+      </a>
+    </li>
+  );
+
   return (
     <div className="App">
       <nav>
         <ul>
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li className="selected">
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
+          <LiLink title="Home" link="home" />
+          <LiLink title="Projects" link="projects" />
+          <LiLink title="Contact" link="contact" />
         </ul>
       </nav>
 
@@ -31,7 +35,7 @@ export default function App() {
               <p>
                 I am an IT professional who has worked in the design of web
                 applications, both third-party and my own. I specialize in React
-                JS and Node JS.
+                JS and Typescript.
               </p>
               <p>
                 I want to be able to use my knowledge to benefit other people
@@ -54,8 +58,10 @@ export default function App() {
                 href="https://leoflood.github.io/pixi-shooter"
                 rel="me"
                 target="_blank"
+                className="project"
               >
-                Pixi Shooter
+                <img src="/pixi-shooter.png" />
+                <b>Pixi Shooter</b>
               </a>
             </li>
             <li>
@@ -63,16 +69,18 @@ export default function App() {
                 href="https://play.google.com/store/apps/details?id=com.gamesflood.ezejedrez"
                 rel="me"
                 target="_blank"
+                className="project"
               >
-                Ezejedrez
+                <img src="/ezejedrez.png" />
+                <b>Ezejedrez</b>
               </a>
             </li>
           </ul>
         </section>
 
-        <section id="about">
+        <section id="contact">
           <header>
-            <h1>About</h1>
+            <h1>Contact</h1>
           </header>
         </section>
 
