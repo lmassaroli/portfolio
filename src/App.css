@@ -92,6 +92,9 @@ nav ul li a:hover {
   color: #dbe8d4;
   white-space: nowrap;
 }
+.project:hover {
+  transform: scale(1.1);
+}
 .project:hover img {
   box-shadow: 0px 0px 10px 3px rgba(115, 204, 168, 0.5);
 }
