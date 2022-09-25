@@ -76,9 +76,10 @@ h1, h2 {
 }
 .projects li {
   display: inline-block;
+  width: 128px;
 }
 .project {
-  margin: 0 1.5rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,7 +94,6 @@ h1, h2 {
 }
 .project b {
   color: #dbe8d4;
-  white-space: nowrap;
 }
 .project:hover {
   transform: scale(1.1);
