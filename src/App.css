@@ -46,7 +46,6 @@ nav ul li a:hover {
   margin: 3rem 0;
 }
 .home-title {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   letter-spacing: 0.125em;
   text-align: center;
@@ -56,6 +55,9 @@ nav ul li a:hover {
 }
 .home-subtitle {
   margin: 0;
+}
+h1, h2 {
+  font-family: "Poppins", sans-serif;
 }
 
 .home-intro {

@@ -65,7 +65,7 @@ export default function App() {
 
         <section id="projects">
           <header>
-            <h1>Projects</h1>
+            <h2>Projects</h2>
           </header>
 
           <ul className="projects">
@@ -82,7 +82,7 @@ export default function App() {
 
         <section id="contact">
           <header>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
           </header>
         </section>
 
