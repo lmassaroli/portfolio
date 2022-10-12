@@ -1,22 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
-
-const projects = [
-  {
-    title: "Pixi Shooter",
-    imgUrl: "/portfolio/pixi-shooter.png",
-    url: "https://leoflood.github.io/pixi-shooter",
-    description:
-      "A demo shooter developed with Typescript, Pixi JS and React, uses the composite design pattern.",
-  },
-  {
-    title: "Ezejedrez",
-    imgUrl: "/portfolio/ezejedrez.png",
-    url: "https://play.google.com/store/apps/details?id=com.gamesflood.ezejedrez",
-    description: "A chess developed on React Native using Typescript and TDD.",
-  },
-];
+import projects from "./projects";
 
 export default function App() {
   const [selectedLink, setSelectedLink] = useState("");
@@ -65,7 +50,7 @@ export default function App() {
 
         <section id="projects">
           <header>
-            <h1>Projects</h1>
+            <h2>Projects</h2>
           </header>
 
           <ul className="projects">
@@ -82,7 +67,7 @@ export default function App() {
 
         <section id="contact">
           <header>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
           </header>
         </section>
 
