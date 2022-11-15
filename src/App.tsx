@@ -34,15 +34,15 @@ export default function App() {
 
             <div className="home-intro">
               <p>
-                I am an IT professional who has worked in the design of web
-                applications, both third-party and my own. I specialize in React
-                JS and Typescript.
+                I am an IT professional with a solid background in the design of
+                web applications, both third-party and my own. Having experience
+                working as part of teams of diverse companies and as a
+                freelancer, I specialize in React and TypeScript.
               </p>
               <p>
-                I want to be able to use my knowledge to benefit other people
-                and thus also gain experience, meet people with similar
-                interests and contribute to exciting projects that have an
-                impact on the world.
+                I am eager to apply my knowledge to benefit other people, gain
+                new experience, and contribute to exciting projects that impact
+                the world.
               </p>
             </div>
           </header>
