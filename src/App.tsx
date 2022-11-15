@@ -94,6 +94,17 @@ export default function App() {
                 <i className="fa fa-linkedin"></i>
               </a>
             </li>
+
+            <li>
+              <a
+                href="https://www.toptal.com/resume/leonardo-massaroli/"
+                title="Toptal"
+                rel="me"
+                target="_blank"
+              >
+                <img src="/portfolio/toptal.svg" />
+              </a>
+            </li>
           </ul>
         </footer>
       </div>
