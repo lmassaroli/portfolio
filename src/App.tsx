@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import "font-awesome/css/font-awesome.min.css";
 import projects from "./projects";
@@ -57,7 +57,7 @@ export default function App() {
             {projects.map((p) => (
               <li key={p.title}>
                 <a href={p.url} rel="me" target="_blank" className="project">
-                  <img src={p.imgUrl} />
+                  <img alt={p.title} src={p.imgUrl} />
                   <b>{p.title}</b>
                 </a>
               </li>
