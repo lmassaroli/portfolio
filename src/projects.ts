@@ -1,5 +1,11 @@
 const projects = [
   {
+    title: "Scissors War",
+    imgUrl: "/portfolio/scissors-war.png",
+    url: "https://leoflood.github.io/scissors-war/",
+    description: "Based on the classic game of rock, paper and scissors in this game you can play as one or two players."
+  },
+  {
     title: "Pixi Shooter",
     imgUrl: "/portfolio/pixi-shooter.png",
     url: "https://leoflood.github.io/pixi-shooter",
@@ -16,7 +22,7 @@ const projects = [
     title: "Independencia Juego",
     imgUrl: "/portfolio/independenciajuego.png",
     url: "https://www.instagram.com/independenciajuego/",
-    description: "",
+    description: "Turn based 3D strategy game about The Independence of South America.",
   },
 ];
 

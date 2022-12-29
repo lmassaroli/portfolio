@@ -53,7 +53,7 @@ export default function App() {
           <ul className="projects">
             {projects.map((p) => (
               <li key={p.title}>
-                <a href={p.url} rel="me" target="_blank" className="project">
+                <a href={p.url} rel="me" target="_blank" className="project" title={p.description}>
                   <img alt={p.title} src={p.imgUrl} />
                   <b>{p.title}</b>
                 </a>
@@ -73,7 +73,7 @@ export default function App() {
             <li>
               <a
                 href="https://github.com/leoflood"
-                title="GitHub"
+                title="GitHub profile"
                 rel="me"
                 target="_blank"
               >
@@ -84,7 +84,7 @@ export default function App() {
             <li>
               <a
                 href="https://www.linkedin.com/in/leonardoflood/"
-                title="LinkedIn"
+                title="LinkedIn profile"
                 rel="me"
                 target="_blank"
               >
@@ -95,7 +95,7 @@ export default function App() {
             <li>
               <a
                 href="https://www.toptal.com/resume/leonardo-massaroli/"
-                title="Toptal"
+                title="Toptal profile"
                 rel="me"
                 target="_blank"
               >
