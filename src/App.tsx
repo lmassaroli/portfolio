@@ -29,7 +29,7 @@ export default function App() {
           <header>
             <div className="home-title-container">
               <h1 className="home-title">Leonardo Massaroli</h1>
-              <h2 className="home-subtitle">Software Engineer</h2>
+              <h2 className="home-subtitle">Full stack developer</h2>
             </div>
 
             <div className="home-intro">
@@ -53,10 +53,43 @@ export default function App() {
           <ul className="projects">
             {projects.map((p) => (
               <li key={p.title}>
-                <a href={p.url} rel="me" target="_blank" className="project" title={p.description}>
-                  <img alt={p.title} src={p.imgUrl} />
-                  <b>{p.title}</b>
-                </a>
+                <div className="project">
+                  <div>
+                    <img alt={p.title} src={p.imgUrl} />
+                  </div>
+
+                  <div>
+                    <b>{p.title}</b>
+                    <p className="project-technologies">
+                      {p.technologies.join(" - ")}
+                    </p>
+                  </div>
+
+                  <div className="project-links-container">
+                    <a
+                      className="project-link"
+                      href={p.url}
+                      rel="me"
+                      target="_blank"
+                      title={p.description}
+                    >
+                      Project
+                    </a>
+
+                    {p.codeUrl && (
+                      <a
+                        className="project-link"
+                        href={p.codeUrl}
+                        title="Project code"
+                        rel="me"
+                        target="_blank"
+                      >
+                        <i className="fa fa-github"></i>
+                        &nbsp; Code
+                      </a>
+                    )}
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
