@@ -102,6 +102,7 @@ h2 {
 
 .experienceLogo {
   width: 80%;
+  max-width: 220px;
 }
 
 .projects {
