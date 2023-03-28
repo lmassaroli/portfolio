@@ -12,6 +12,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@mantine/carousel": "^6.0.5",
+    "@mantine/core": "^6.0.5",
+    "@mantine/hooks": "^6.0.5",
+    "embla-carousel-react": "^7.1.0",
     "font-awesome": "^4.7.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",

@@ -36,17 +36,17 @@ nav ul li a:hover {
   border-bottom: 4px solid #73cca8;
 }
 
-.page-content {
+.pageContent {
   flex: 1;
   position: relative;
   top: 3rem;
   padding: 0 1rem;
 }
 
-.home-title-container {
+.homeTitleContainer {
   margin: 3rem 0;
 }
-.home-title {
+.homeTitle {
   font-style: normal;
   letter-spacing: 0.125em;
   text-align: center;
@@ -54,20 +54,54 @@ nav ul li a:hover {
   margin: 0;
   margin-bottom: 0.5rem;
 }
-.home-subtitle {
+.homeSubtitle {
   margin: 0;
 }
-h1, h2 {
+h1,
+h2 {
   font-family: "Poppins", sans-serif;
 }
 
-.home-intro {
+.homeIntro {
   max-width: 28rem;
   margin: 0 auto;
   font-size: 1.2rem;
   text-align: justify;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.experiencesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.experiences {
+  width: 50%;
+  min-width: 350px;
+}
+
+.experienceContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience {
+  position: relative;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experienceLogo {
+  width: 80%;
 }
 
 .projects {
@@ -86,7 +120,7 @@ h1, h2 {
   padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .project > div {
   margin-bottom: 10px;
@@ -106,16 +140,16 @@ h1, h2 {
   font-size: 1.1rem;
   color: #dbe8d4;
 }
-.project .project-technologies {
+.project .projectTechnologies {
   margin: 0;
 }
-.project .project-links-container {
+.project .projectLinksContainer {
   display: flex;
   width: 200px;
   justify-content: space-around;
   align-items: center;
 }
-.project .project-link {
+.project .projectLink {
   display: inline-block;
   padding: 0.5rem 1rem;
   border: 1px solid #ccc;
@@ -124,14 +158,14 @@ h1, h2 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.project .project-link:hover {
-  border-color: #73cca8;;
+.project .projectLink:hover {
+  border-color: #73cca8;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 .project:hover img {
   box-shadow: 0px 0px 10px 3px rgba(115, 204, 168, 0.5);
 }
-.project .project-link:hover * {
+.project .projectLink:hover * {
   color: #73cca8;
 }
 
@@ -190,6 +224,6 @@ h1, h2 {
   padding: 2em;
 }
 
-.read-the-docs {
+.readTheDocs {
   color: #888;
 }
