@@ -20,7 +20,6 @@ const projects = [
   {
     title: "Ezejedrez",
     imgUrl: "/portfolio/ezejedrez.png",
-    url: "https://play.google.com/store/apps/details?id=com.gamesflood.ezejedrez",
     codeUrl: "https://github.com/leoflood/ezejedrez",
     description: "A chess developed on React Native using Typescript and TDD.",
     technologies: ["React Native"],

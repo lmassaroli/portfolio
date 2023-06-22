@@ -113,15 +113,17 @@ export default function App() {
                   </div>
 
                   <div className={styles.projectLinksContainer}>
-                    <a
-                      className={styles.projectLink}
-                      href={p.url}
-                      rel="me"
-                      target="_blank"
-                      title={p.description}
-                    >
-                      Project
-                    </a>
+                    {p.url && (
+                      <a
+                        className={styles.projectLink}
+                        href={p.url}
+                        rel="me"
+                        target="_blank"
+                        title={p.description}
+                      >
+                        Project
+                      </a>
+                    )}
 
                     {p.codeUrl && (
                       <a
