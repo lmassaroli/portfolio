@@ -38,13 +38,14 @@ export default function App() {
 
             <div className={styles.homeIntro}>
               <p>
-                I am a Software Engineer with 4+ years of experience who has
-                worked in the design of web applications in multiple companies
-                both enterprise and start-ups. Specialized in React, TypeScript
-                and Node.js. Eager to apply my knowledge to benefit others and
-                thus also gain new experiences, meet people with similar
-                interests and contribute to exciting projects that have an
-                impact on the world.
+                As an IT professional with 4+ years of experience, I have had
+                the opportunity to work with multiple companies, ranging from
+                established enterprises to innovative start-ups, where I have
+                played a significant role in designing web applications. My
+                expertise lies in React, TypeScript, and Node.js, enabling me to
+                create robust and efficient solutions. I am passionate about
+                using my knowledge to make a positive impact and contribute to
+                projects that have a meaningful influence on the world.
               </p>
             </div>
           </header>
