@@ -26,8 +26,8 @@ const projects = [
   {
     title: "Scissors War",
     imgUrl: "/portfolio/scissors-war.png",
-    url: "https://leoflood.github.io/scissors-war/",
-    codeUrl: "https://github.com/leoflood/scissors-war",
+    url: "https://sophie-games.github.io/scissors-war/",
+    codeUrl: "https://github.com/sophie-games/scissors-war",
     description:
       "Based on the classic game of Rock Paper Scissors in this game you can play as one or two players.",
     technologies: ["React", "Pixi.js"],
