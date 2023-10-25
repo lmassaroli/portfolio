@@ -1,5 +1,12 @@
 const projects = [
   {
+    title: "Herocraft",
+    imgUrl: "/portfolio/herocraft.png",
+    url: "https://play.google.com/store/apps/details?id=com.sophiegames.herocraft",
+    description: "A survival crafting videogame.",
+    technologies: ["Capacitor", "Pixi.js"],
+  },
+  {
     title: "Pixi Shooter",
     imgUrl: "/portfolio/pixi-shooter.png",
     url: "https://leoflood.github.io/pixi-shooter",
