@@ -166,7 +166,7 @@ export default function App() {
 
             <li>
               <a
-                href="https://www.linkedin.com/in/leonardoflood/"
+                href="https://www.linkedin.com/in/lmassaroli/"
                 title="LinkedIn profile"
                 rel="me"
                 target="_blank"
