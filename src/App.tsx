@@ -38,7 +38,7 @@ export default function App() {
 
             <div className={styles.homeIntro}>
               <p>
-                As an IT professional with 4+ years of experience, I have had
+                As an IT professional with 5+ years of experience, I have had
                 the opportunity to work with multiple companies, ranging from
                 established enterprises to innovative start-ups, where I have
                 played a significant role in designing web applications. My
