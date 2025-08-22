@@ -1,5 +1,13 @@
 const projects = [
   {
+    title: "Sophie Games",
+    imgUrl: "/portfolio/sophiegames.jpg",
+    url: "https://sophiegames.net",
+    description:
+      "Created Lines of Battle, an innovative competitive multiplayer game that has garnered over 175,000 registered users.",
+    technologies: ["AWS", "Postgres", "Typescript"],
+  },
+  {
     title: "Herocraft",
     imgUrl: "/portfolio/herocraft.png",
     url: "https://play.google.com/store/apps/details?id=com.sophiegames.herocraft",

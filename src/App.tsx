@@ -33,19 +33,18 @@ export default function App() {
           <header>
             <div className={styles.homeTitleContainer}>
               <h1 className={styles.homeTitle}>Leonardo Massaroli</h1>
-              <h2 className={styles.homeSubtitle}>Full stack developer</h2>
+              <h2 className={styles.homeSubtitle}>Software Engineer</h2>
             </div>
 
             <div className={styles.homeIntro}>
               <p>
-                As an IT professional with 5+ years of experience, I have had
-                the opportunity to work with multiple companies, ranging from
-                established enterprises to innovative start-ups, where I have
-                played a significant role in designing web applications. My
-                expertise lies in React, TypeScript, and Node.js, enabling me to
-                create robust and efficient solutions. I am passionate about
-                using my knowledge to make a positive impact and contribute to
-                projects that have a meaningful influence on the world.
+                I’m an IT professional with over 6 years of experience, working
+                on exciting projects with startups and big companies alike,
+                building web applications that make a difference. I founded my
+                own company and created an app that grew to over 175,000 users,
+                a journey that taught me how to turn ideas into real, scalable
+                solutions. I love using my skills to tackle challenging projects
+                and create tech that matters.
               </p>
             </div>
           </header>
