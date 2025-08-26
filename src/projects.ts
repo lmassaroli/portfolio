@@ -17,8 +17,8 @@ const projects = [
   {
     title: "Pixi Shooter",
     imgUrl: "/portfolio/pixi-shooter.png",
-    url: "https://leoflood.github.io/pixi-shooter",
-    codeUrl: "https://github.com/leoflood/pixi-shooter",
+    url: "https://lmassaroli.github.io/pixi-shooter",
+    codeUrl: "https://github.com/lmassaroli/pixi-shooter",
     description:
       "A demo shooter developed with Typescript, Pixi JS and React, uses the composite design pattern.",
     technologies: ["React", "Pixi.js"],

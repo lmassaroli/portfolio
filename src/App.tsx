@@ -155,7 +155,7 @@ export default function App() {
           <ul className={styles.links}>
             <li>
               <a
-                href="https://github.com/leoflood"
+                href="https://github.com/lmassaroli"
                 title="GitHub profile"
                 rel="me"
                 target="_blank"
