@@ -116,23 +116,25 @@ export default function App() {
 
       <div className={styles.pageContent}>
         {/* Hero Section */}
-        <section 
-          id="home" 
-          className={styles.hero}
-          ref={(el) => sectionRefs.current['home'] = el}
-        >
-          <div className={styles.container}>
-            <h1 className={styles.heroTitle}>Leonardo Massaroli</h1>
-            <h2 className={styles.heroSubtitle}>Software Engineer & Tech Lead</h2>
-            <p className={styles.heroIntro}>
-              I'm a Software Engineer with over 6 years of experience developing web and mobile applications 
-              for startups and established companies. As the founder of Sophie Games, I built Lines of Battle, 
-              a multiplayer strategy game that achieved 175,000 registered users within 12 months of development in 2024. 
-              My expertise lies in full-stack development, leveraging technologies like Typescript, Postgres, and AWS 
-              to create scalable, user-focused solutions.
-            </p>
-          </div>
-        </section>
+        <main>
+          <section 
+            id="home" 
+            className={styles.hero}
+            ref={(el) => sectionRefs.current['home'] = el}
+          >
+            <div className={styles.container}>
+              <h1 className={styles.heroTitle}>Leonardo Massaroli</h1>
+              <h2 className={styles.heroSubtitle}>Software Engineer & Tech Lead</h2>
+              <p className={styles.heroIntro}>
+                I'm a Software Engineer with over 6 years of experience developing web and mobile applications 
+                for startups and established companies. As the founder of Sophie Games, I built Lines of Battle, 
+                a multiplayer strategy game that achieved 175,000 registered users within 12 months of development in 2024. 
+                My expertise lies in full-stack development, leveraging technologies like Typescript, Postgres, and AWS 
+                to create scalable, user-focused solutions.
+              </p>
+            </div>
+          </section>
+        </main>
 
         {/* Experience Section */}
         <section 
@@ -181,7 +183,10 @@ export default function App() {
                             <img
                               className={styles.experienceLogo}
                               src={exp.img}
-                              alt={exp.title}
+                              alt={`${exp.title} logo`}
+                              loading="lazy"
+                              width="100"
+                              height="100"
                             />
                           </a>
                         ) : (
@@ -189,7 +194,10 @@ export default function App() {
                             <img
                               className={styles.experienceLogo}
                               src={exp.img}
-                              alt={exp.title}
+                              alt={`${exp.title} logo`}
+                              loading="lazy"
+                              width="100"
+                              height="100"
                             />
                           </div>
                         )}
@@ -222,8 +230,11 @@ export default function App() {
                   <div className={styles.project}>
                     <img 
                       className={styles.projectImage}
-                      alt={project.title} 
+                      alt={`${project.title} project screenshot`} 
                       src={project.imgUrl} 
+                      loading="lazy"
+                      width="300"
+                      height="200"
                     />
                     
                     <h3 className={styles.projectTitle}>{project.title}</h3>
@@ -333,7 +344,7 @@ export default function App() {
             </ul>
             
             <p className={styles.copyright}>
-              © 2024 Leonardo Massaroli. Built with React & TypeScript.
+              © 2022 Leonardo Massaroli. Built with React & TypeScript.
             </p>
           </div>
         </footer>
