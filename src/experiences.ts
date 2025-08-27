@@ -5,6 +5,11 @@ const experiences = [
     url: "https://www.toptal.com/resume/leonardo-massaroli/",
   },
   {
+    title: "InsightRX",
+    img: "/portfolio/InsightRX.webp",
+    url: "https://www.insight-rx.com/",
+  },
+  {
     title: "AccessPay",
     img: "/portfolio/accesspay-logo.png",
   },

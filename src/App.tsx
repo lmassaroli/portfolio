@@ -12,6 +12,7 @@ export default function App() {
   const [selectedLink, setSelectedLink] = useState("home");
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set(['home']));
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
+  const emailRef = useRef<HTMLSpanElement>(null);
 
   // Handle smooth scrolling and active section detection
   useEffect(() => {
@@ -64,6 +65,23 @@ export default function App() {
     return () => observer.disconnect();
   }, []);
 
+  // Email obfuscation - simple and effective
+  useEffect(() => {
+    if (emailRef.current && !emailRef.current.hasChildNodes()) {
+      // Simple obfuscation - email parts separated
+      const user = 'leonmassaroli';
+      const domain = 'gmail';
+      const ext = 'com';
+      
+      const emailLink = document.createElement('a');
+      emailLink.href = `mailto:${user}@${domain}.${ext}`;
+      emailLink.textContent = `${user}@${domain}.${ext}`;
+      emailLink.title = 'Click to send email';
+      
+      emailRef.current.appendChild(emailLink);
+    }
+  }, []);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -105,7 +123,7 @@ export default function App() {
         >
           <div className={styles.container}>
             <h1 className={styles.heroTitle}>Leonardo Massaroli</h1>
-            <h2 className={styles.heroSubtitle}>Software Engineer & Game Developer</h2>
+            <h2 className={styles.heroSubtitle}>Software Engineer & Tech Lead</h2>
             <p className={styles.heroIntro}>
               I'm a Software Engineer with over 6 years of experience developing web and mobile applications 
               for startups and established companies. As the founder of Sophie Games, I built Lines of Battle, 
@@ -265,6 +283,11 @@ export default function App() {
               I'm always interested in new opportunities and exciting projects. 
               Feel free to reach out if you'd like to collaborate or just say hello!
             </p>
+            <div className={styles.contactInfo}>
+              <p className={styles.contactEmail}>
+                Email: <span ref={emailRef} className={styles.emailLink}></span>
+              </p>
+            </div>
           </div>
         </section>
 
